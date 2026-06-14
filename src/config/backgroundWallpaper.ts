@@ -70,17 +70,17 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否允许用户通过控制面板切换横幅标题显示
 			switchable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			title: "时间,是一条逆流的河",
 			// 主页横幅主标题字体大小
 			titleSize: "3.8rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"理想主义的花终将盛开在浪漫主义的土壤上",
+				// "From Shattered Sky, I Free Fall",
+				// "Amidst Silenced Stars, I Deep Sleep",
+				// "Upon Lighted Fyrefly, I Soon Gaze",
+				// "From Undreamt Night, I Thence Shine",
+				// "In Finalized Morrow, I Full Bloom",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -140,7 +140,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 横幅图片轮播配置，仅在当配置多张图片时生效
 		carousel: {
 			// 是否启用横幅图片轮播；关闭时保持每次刷新随机显示一张
-			enable: false,
+			enable: true,
 			// 轮播切换间隔（毫秒）
 			interval: 5000,
 			// 是否允许用户通过控制面板切换横幅轮播

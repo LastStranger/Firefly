@@ -1,0 +1,20 @@
+---
+const { initialCount = 0 } = Astro.props;
+---
+
+<button
+  class="interactive-like flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-medium rounded-xl shadow-lg transform active:scale-95 transition-all"
+  data-count={initialCount}
+>
+  <span class="like-text">✨ 点赞支持 ({initialCount})</span>
+</button>
+
+<script>
+  document.querySelectorAll('.interactive-like').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const count = Number(btn.getAttribute('data-count')) + 1;
+      btn.setAttribute('data-count', String(count));
+      btn.querySelector('.like-text')!.textContent = `✨ 点赞支持 (${count})`;
+    });
+  });
+</script>
